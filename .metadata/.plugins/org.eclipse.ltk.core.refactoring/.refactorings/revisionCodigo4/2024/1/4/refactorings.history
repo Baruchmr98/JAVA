@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.equipo15.revisionCodigo&apos; to &apos;com.generation&apos;&#x0A;- Original project: &apos;revisionCodigo4&apos;&#x0A;- Original element: &apos;revisionCodigo4/src/com.equipo15.revisionCodigo&apos;&#x0A;- Renamed element: &apos;revisionCodigo4/src/com.generation&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.equipo15.revisionCodigo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.equipo15.revisionCodigo" name="com.generation" qualified="false" references="true" stamp="1706224120869" textual="false" version="1.0"/>
+</session>

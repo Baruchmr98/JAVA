@@ -1,0 +1,40 @@
+package org.generation.employee.manager;
+
+import org.generation.employee.*;
+
+/*
+ * La clase Manager sirve como subclase (clase hija), por lo tanto, debe extender (heredar) desde la superclase (clase Employee) para poder acceder a los atributos y métodos de la superclase
+ */
+
+public class Manager extends Employee {
+	
+	//1. Atributos
+	private int antiguedad;
+	private double bono;
+	
+	
+	//2. Constructor
+	public Manager(String nombreCompleto, int id, double salario, String puesto, int antiguedad, double bono) {
+		super(nombreCompleto, id, salario, puesto);
+		this.antiguedad = antiguedad;
+		this.bono = bono;
+	}
+	
+	
+	//3. Métodos
+	public void organizarReunion() {
+		System.out.println("El manager " + this.getNombreCompleto() + "convoca a una reunión");
+	}
+	
+	
+	//4. Getters
+	
+	
+	
+	//5. Setters
+	
+	
+	
+	//6. toString
+
+}

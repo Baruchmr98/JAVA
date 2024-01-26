@@ -1,0 +1,42 @@
+package org.generation.excercises;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * Programa que permite que un usuario agregue nombre completo de estudiantes matriculados en una universidad. 
+ * Posteriomente, muestra la lista de los estudiantes agregados.
+ * --- Requerimientos:
+ *        >Utilizar ArrayList para guardar a los estudiantes
+ *        >Scanner para interactuar con el usuario y permitir que agregue estudiantes
+ *        >Loop para permitir que se agreguen varios estudiantes (do-while)
+ *        >Opción para salir del loop con la palabra 'Salir' (if-else, try-catch, switch)
+ *        >Mostrar Lista de estudiantes (for-each)
+ */
+
+public class SistemaEscolar {
+	
+	public static void main(String[] args) {
+		
+		//1. Inicializar un ArrayList para guardar a nuestros estudiantes
+		ArrayList<String> estudiantes = new ArrayList<String>();
+		
+		//2. Inicializar el Scanner para que el usuario comience a agregar a los estudiantes
+		Scanner scanner = new Scanner(System.in);
+		
+		//3.Loop para agregar los nombres completos
+		String nombreEstudiante;
+		do {
+			System.out.println("Ingresa el nombre del estudiante. Escribe 'Salir' para finalizar.");
+			nombreEstudiante = scanner.nextLine();
+			estudiantes.add(nombreEstudiante);
+		} while(!nombreEstudiante.equals("Salir"));
+		
+		//4.Mostrar lista de estudiantes (for-each)
+		System.out.println("");
+		for (String estudiante : estudiantes) System.out.println(estudiante);
+		
+		
+		
+	}
+}

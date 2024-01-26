@@ -1,0 +1,7 @@
+package org.generation.excercises;
+
+public class SistemaEscolar {
+	public static void main(String[] args) {
+		
+	}
+}

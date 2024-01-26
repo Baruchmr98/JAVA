@@ -1,0 +1,66 @@
+package org.generation.collections;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ArrayListCollections {
+	
+	public static void main(String[] args) {
+		
+		//------------------ ARRAYS ----------------------
+		String[] names = {
+				"Eunice", "Maara", "Abigail", "Daniel", "Jonathan", "Rey", "David", "Braulio"
+		};
+		
+		//Impresión de Arrays mediante métodos
+		System.out.println(names);
+		
+		//To String
+		System.out.println(Arrays.toString(names));
+		
+		int[] edades = {12, 3, 25, 55, 69, 41, 29, 37, 18};
+		System.out.println(Arrays.toString(edades));
+		
+		//Acceder a cada elemento del Array 'names' y 'edades'
+		String name1 = names[0];
+		System.out.println(name1);
+		int edad1 = edades[0];
+		System.out.println(edad1);
+		
+		//Obtener la longitud del Array
+		int longitudNames = names.length;
+		System.out.println(longitudNames);
+		
+		//Mostrar cada elemento utilizando un bucle
+		//ForEach
+		for (String name : names) System.out.println(name);
+		
+		//-------------------------- ARRAY LIST ----------------------------
+		//Todos los datos primitivos tienen una clase que los envuelven. Esas clases superiores, wrappers, son las manejadas por el ArrayList, que las identifica como objetos
+		ArrayList<String> films = new ArrayList<String>();
+		
+		//Agregar elementos
+		films.add("Inception");
+		films.add("Se7en");
+		films.add("The shinning");
+		films.add("Pulp fiction");
+		films.add("Mr Nobody");
+		films.add("The shutter island");
+		films.add("Ready Player One");
+		
+		System.out.println(films);
+		
+		//Obtener un elemento: name.get(index);
+		String film1 = films.get(0);
+		System.out.println(film1);
+		
+		//Modificar un elemento: name.set(index, newValue)
+		String film2 = films.set(2,  "Memento");
+		String film2Get = films.get(2);
+		System.out.println(film2Get);
+		
+		
+		
+		
+	}
+}
